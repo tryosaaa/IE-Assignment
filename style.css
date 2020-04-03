@@ -56,3 +56,11 @@ background: linear-gradient(to right, rgb(248, 182, 219), #BB377D); /* W3C, IE 1
 
 }
 
+@media (max-width :590px){
+    .w3-white, .w3-hover-white:hover {
+        color: #000 !important;
+        background-color: #fff !important;
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+}
