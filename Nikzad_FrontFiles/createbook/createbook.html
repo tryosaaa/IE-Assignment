@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ساختن کتاب</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        @font-face {
+            font-family: vazir;
+            src: url(../font/Vazir.woff2);
+        }
+        
+        @font-face {
+            font-family: vazir;
+            src: url(../font/Vazir-Black.woff2);
+            font-weight: bold;
+        }
+        
+        a {
+            text-decoration: none;
+            font-family: Vazir;
+        }
+        
+        body {
+            font-family: vazir;
+            display: block;
+        }
+        
+        .form-group input {
+            background-color: #5AD9D6;
+            color: white;
+        }
+        
+        .btn {
+            background-color: #FFCA4A;
+            border-color: #FFCA4A;
+        }
+        
+        h2 {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="height: 9rem">
+        <div style="display: flex; justify-content: center; margin: 3.8rem;">
+            <a href="#">
+                <img src="../Images/logo.png" alt="TiKetab-Logo" width="100px">
+            </a>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+        <form dir="rtl" class="was-validated" enctype="multipart/form-data" action="{{ action('BookController@store')}}" method="post">
+            <div class="form-group">
+                <label for="uname">@csrf نام</label>
+                <input type="text" class="form-control" id="uname" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="pub">نویسنده</label>
+                <input type="text" class="form-control" id="pub" name="publisher" required>
+            </div>
+            <div class="form-group">
+                <label for="price">قیمت</label>
+                <input type="text" class="form-control" id="price" name="price" required>
+            </div>
+            <div class="form-group">
+                <label for="year">سال</label>
+                <input type="text" class="form-control" id="year" name="year" required>
+            </div>
+            <div class="form-group">
+                <label for="book_image">عکس</label>
+                <input type="file" class="form-control" id="book_image" name="book_image" required>
+            </div>
+            <br>
+            <button type="submit" name="submit" class="btn btn-primary">ارسال پست</button>
+        </form>
+    </div>
+
+
+
+
+</body>

@@ -1,0 +1,141 @@
+@font-face {
+    font-family: vazir;
+    src: url(font/Vazir.ttf);
+}
+
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(font/Vazir-Black.ttf);
+    font-weight: bold;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: vazir;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    font-family: Vazir;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    height: 500px;
+    grid-area: main;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    grid-area: header;
+    height: 180px;
+    position: relative;
+}
+
+aside {
+    height: 300px;
+    grid-area: aside;
+}
+
+.grid-container {
+    display: grid;
+    width: auto;
+    height: 500px;
+    grid-template-columns: 5% 1fr 3fr 5%;
+    grid-template-areas: '. header header  .' '. main main  .';
+}
+
+.header .fixed {
+    left: 4%;
+    right: 5%;
+    top: 0;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 5;
+    background-color: #FFF;
+}
+
+.flex-container {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+*,
+ ::before,
+ ::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.menuleft {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-container a {
+    color: #999999;
+    font-size: 1.2rem;
+}
+
+.w3-cell-row {
+    margin-bottom: 3rem;
+}
+
+.colorInput {
+    background-color: #5AD9D6;
+    color: white;
+}
+
+.submit .w3-amber {
+    color: white !important;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:500px) {
+    .menuleft {
+        width: 70%;
+    }
+    .menuright {
+        display: grid;
+    }
+}

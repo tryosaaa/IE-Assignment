@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/fontawesome.min.js" integrity="sha256-bP9MBDJ4xkv81w/A2cgwRonMI+eelvZwm7e8rP5JIxA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./userIndex.css">
+    <title>User Page</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="fixed">
+                <div class="flex-container">
+                    <div class="menuleft">
+                        <a href="#">
+                            <i class="far fa-user" style=" border: 1px solid;padding: 10px;border-radius: 100%;"></i> سلام بره
+                        </a>
+                        <a href="#">
+                            <img src="{{ URL::asset('assets/logo.png') }}" alt="TiKetab-Logo" width="100px">
+                        </a>
+                    </div>
+                    <div class="menuright">
+                        <a href="#">
+                            <i class="far fa-plus-square"></i> ثبت کتاب
+                        </a>
+                        <a href="#" style="margin-top: 10px;">
+                            <i class="far fa-bell"></i> اعلان ها
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="userImage"></div>
+            <div>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell">
+                        <p>
+                            <label>نام</label>
+                            <input class="w3-input colorInput w3-round-xlarge" type="text" value="محمدحسین"></p>
+                    </div>
+                    <div class="w3-container w3-cell">
+                        <p>
+                            <label>نام خانوادگی</label>
+                            <input class="w3-input colorInput w3-round-xlarge" type="text" value="علیجانی دریاسری"></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell">
+                        <p>
+                            <label>شماره موبایل</label>
+                            <input class="w3-input colorInput w3-round-xlarge" type="text" value="09115014856"></p>
+                    </div>
+                    <div class="w3-container w3-cell">
+                        <p>
+                            <label>ایمیل</label>
+                            <input class="w3-input colorInput w3-round-xlarge" type="text" value="313mjnalabd@gmail.com"></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell">
+                        <p>
+                            <label>شهر</label>
+                            <input class="w3-input colorInput w3-round-xlarge" type="text" value="رشت"></p>
+                    </div>
+                    <div class="w3-container w3-cell">
+                        <p>
+                            <label>آدرس</label>
+                            <input class="w3-input colorInput w3-round-xlarge" type="text" value="پل عراق، کوچه شهدا، ساختمان توکل"></p>
+                    </div>
+                </div>
+                <div class="submit">
+                    <p>
+                        <button class="w3-btn w3-amber w3-round-xxlarge">ذخیره تغییرات</button></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>
